@@ -23,6 +23,7 @@ public class DialogActivity extends Activity {
 				finish();
 			}
 		}).show();
+		
 	}
 	
 	OnKeyListener keylistener = new DialogInterface.OnKeyListener(){
