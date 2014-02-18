@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:screenOrientation="landscape" >
+	<RelativeLayout 
+	    android:id="@+id/MainLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:screenOrientation="landscape" >
+	
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="300dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/image_edit_bg" >
+	
+	        <RelativeLayout
+	            android:id="@+id/relativeLayout2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="34dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true" >
+	
+	            <TextView
+	                android:id="@+id/txtTitle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="10dp"
+	                android:text="Site"
+	                android:textColor="#000000"
+	                android:textSize="21sp" />
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/relativeLayout2" >
+	
+	            <ScrollView
+	                android:id="@+id/scrollView"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:background="#00000000" >
+	
+	                <br.com.dina.ui.widget.UITableView
+	                    android:id="@+id/siteTableView"
+	                    style="@style/UITableView"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" >
+	                </br.com.dina.ui.widget.UITableView>
+	            </ScrollView>
+	        </RelativeLayout>
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/RelativeLayout01"
+	        android:layout_width="300dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="300.2dp"
+	        android:background="@drawable/image_edit_bg" >
+	
+	        <RelativeLayout
+	            android:id="@+id/RelativeLayout02"
+	            android:layout_width="wrap_content"
+	            android:layout_height="34dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true" >
+	
+	            <TextView
+	                android:id="@+id/TextView01"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="10dp"
+	                android:text="Block"
+	                android:textColor="#000000"
+	                android:textSize="21sp" />
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/RelativeLayout02" >
+	
+	            <ScrollView
+	                android:id="@+id/ScrollView01"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:background="#00000000" >
+	
+	                <br.com.dina.ui.widget.UITableView
+	                    android:id="@+id/blockTableView"
+	                    style="@style/UITableView"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" >
+	                </br.com.dina.ui.widget.UITableView>
+	            </ScrollView>
+	        </RelativeLayout>
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/RelativeLayout03"
+	        android:layout_width="180dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="600.6dp"
+	        android:background="@drawable/image_edit_bg" >
+	
+	        <RelativeLayout
+	            android:id="@+id/RelativeLayout04"
+	            android:layout_width="wrap_content"
+	            android:layout_height="34dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true" >
+	
+	            <TextView
+	                android:id="@+id/TextView02"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="10dp"
+	                android:text="Floor"
+	                android:textColor="#000000"
+	                android:textSize="21sp" />
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/RelativeLayout04" >
+	
+	            <ScrollView
+	                android:id="@+id/ScrollView02"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:background="#00000000" >
+	
+	                <br.com.dina.ui.widget.UITableView
+	                    android:id="@+id/floorTableView0"
+	                    style="@style/UITableView"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" >
+	                </br.com.dina.ui.widget.UITableView>
+	            </ScrollView>
+	        </RelativeLayout>
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/RelativeLayout05"
+	        android:layout_width="179.2dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/image_edit_bg" >
+	
+	        <RelativeLayout
+	            android:id="@+id/RelativeLayout06"
+	            android:layout_width="wrap_content"
+	            android:layout_height="34dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true" >
+	
+	            <TextView
+	                android:id="@+id/TextView03"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="10dp"
+	                android:text="Flat"
+	                android:textColor="#000000"
+	                android:textSize="21sp" />
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/RelativeLayout06" >
+	
+	            <ScrollView
+	                android:id="@+id/ScrollView03"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:background="#00000000" >
+	
+	                <br.com.dina.ui.widget.UITableView
+	                    android:id="@+id/flatTableView"
+	                    style="@style/UITableView"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent" >
+	                </br.com.dina.ui.widget.UITableView>
+	            </ScrollView>
+	        </RelativeLayout>
+	    </RelativeLayout>
+	
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+        android:layout_alignBottom="@+id/MainLayout"
+        android:layout_alignLeft="@+id/MainLayout"
+	    android:screenOrientation="landscape"
+	    android:background="#cccccc" >
+	    <Button
+            android:id="@+id/btnDataToDevice"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_but"
+            android:text="Data to Device"
+            android:textColor="#ffffff" />
+	    <Button
+            android:id="@+id/btnDataToServer"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="180dp"
+            android:background="@drawable/bg_but"
+            android:text="Data to Server"
+            android:textColor="#ffffff" />
+	    <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="360dp"
+            android:background="@drawable/bg_but"
+            android:text="Logout"
+            android:textColor="#ffffff" />
+	    <ImageView 
+	        	android:id="@+id/ivIsConnected"
+	        	android:src="@drawable/connection_cross" 
+        		android:layout_marginTop="18dp"
+        		android:layout_marginRight="130dp"
+        		android:layout_alignParentRight="true"
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>
+	    <TextView
+	        	android:id="@+id/tvIsConnected"
+            	android:layout_height="40dp"
+                android:layout_width="120dp"
+        		android:layout_marginTop="10dp"
+                android:text="disconnect"
+        		android:layout_alignParentRight="true"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	</RelativeLayout>
+</RelativeLayout>

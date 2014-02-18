@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_edit_bg"
+    android:gravity="center_horizontal"
+    android:screenOrientation="landscape" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             android:layout_marginLeft="18dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="911dp"
+        android:layout_height="365dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+         >
+
+        <com.lee.demo.view.SketchPadView
+            android:id="@+id/sketchpad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:background="@drawable/left_menu"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btnRedo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/icon_undo" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/btnUndo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/icon_next" />
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btnNext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/icon_previous" />
+
+        <Button
+            android:id="@+id/btnRedo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/btnUndo"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_redo" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/btnColor"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/icon_bg2" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnErase"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/icon_erase" />
+
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/btnRedo"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/icon_color" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="_1000001">Login ID / Password cannot be empty.</string>
+    <string name="_1000002">Please input Server.</string>
+    <string name="_10000021">Please input Server port.</string>
+    <string name="_1000003">Login Information is not correct.</string>
+    <string name="_1000004">Login fail. Please try again later.</string>
+    <string name="_1000005">Login Success.</string>
+</resources>

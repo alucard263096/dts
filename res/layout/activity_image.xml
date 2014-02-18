@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.dts"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p_1"
+    android:screenOrientation="landscape" >
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="590dip"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <org.taptwo.android.widget.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="#ffffff"
+                app:activeType="fill"
+                app:inactiveColor="#cccccc"
+                app:inactiveType="fill"
+                app:radius="4dip" />
+        </LinearLayout>
+
+        <org.taptwo.android.widget.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="590dip"
+            android:layout_height="150dip"
+             >
+
+        </org.taptwo.android.widget.ViewFlow>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="590dp"
+        android:layout_height="355dp"
+        android:layout_alignLeft="@+id/framelayout"
+        android:layout_marginTop="50dp" >
+
+        <AbsoluteLayout
+            android:layout_width="560dp"
+            android:layout_height="326dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/big_default" >
+
+            <ImageView
+                android:id="@+id/big_imageView"
+                android:layout_width="555dp"
+                android:layout_height="321dp"
+                android:layout_x="3dp"
+                android:layout_y="3dp"
+                android:adjustViewBounds="true"
+                android:padding="1dp"
+                android:scaleType="fitXY" />
+        </AbsoluteLayout>
+    </RelativeLayout>
+
+   
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutEditText"
+        android:layout_width="332dp"
+        android:layout_height="362dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="10dp" >
+
+        <EditText
+            android:id="@+id/editTxtRemarks"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="top"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+ <Button
+        android:id="@+id/btnFloorPlan"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/btnSketch"
+        android:layout_below="@+id/btnSketch"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_but"
+        android:text="@string/btnFloorPlan"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSaveClose"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_alignBaseline="@+id/btnFloorPlan"
+        android:layout_alignBottom="@+id/btnFloorPlan"
+        android:layout_alignLeft="@+id/btnRemarks"
+        android:background="@drawable/bg_but"
+        android:text="@string/btnSaveAndClose"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btnSketch"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/btnRemarks"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/btnSaveClose"
+        android:background="@drawable/bg_but"
+        android:text="@string/btnSketch"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnRemarks"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/layoutEditText"
+        android:layout_alignTop="@+id/framelayout"
+        android:background="@drawable/bg_but"
+        android:text="@string/btnStandardRemarks"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnClearRemarks"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btnFloorPlan"
+        android:layout_toRightOf="@+id/btnSketch"
+        android:layout_marginLeft="18dip"
+        android:background="@drawable/bg_but"
+        android:text="@string/btnClearRemarks"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnEditPhoto"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/btnClearRemarks"
+        android:layout_alignTop="@+id/btnFloorPlan"
+        android:background="@drawable/bg_but"
+        android:text="@string/btnEditPhoto"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="491dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/relativeLayout1"
+        android:background="@drawable/p_12" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" >
+
+          
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/back"
+                android:layout_marginLeft="18dp"
+                android:text="Title"
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativeLayout3" >
+
+	    <TabHost android:id="@+id/tabhost"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content">  
+	        <LinearLayout  
+	            android:orientation="vertical"  
+	            android:layout_width="fill_parent"  
+	            android:layout_height="fill_parent">  
+	              
+	            <TabWidget android:id="@android:id/tabs"   
+	              android:orientation="horizontal"  
+	              android:layout_width="wrap_content"  
+	              android:layout_height="wrap_content">  
+	            </TabWidget>
+	           
+	             <FrameLayout android:id="@android:id/tabcontent"  
+	                  android:layout_width="wrap_content"  
+	                  android:layout_height="wrap_content">   
+			            <RelativeLayout
+			                android:id="@+id/window_bg_glazing"
+			                android:layout_width="630dp"
+			                android:layout_height="400dp"
+	                		android:layout_marginTop="10dp"
+			                android:layout_marginLeft="40dp"
+			                android:background="@drawable/p_but" >
+			            </RelativeLayout>
+			            <RelativeLayout
+			                android:id="@+id/window_bg_frame"
+			                android:layout_width="630dp"
+			                android:layout_height="400dp"
+	                		android:layout_marginTop="10dp"
+			                android:layout_marginLeft="40dp"
+			                android:background="@drawable/p_but" >
+			            </RelativeLayout>
+	             </FrameLayout>
+	           
+	         </LinearLayout>  
+	    </TabHost>  
+
+		<TableLayout 
+	        android:id="@+id/relativeLayout1112"
+	        android:layout_width="780dp"
+	        android:layout_height="120dp"
+	        android:layout_below="@+id/tabhost"
+	        android:layout_alignParentLeft="@+id/tabhost"
+	        android:layout_marginTop="10dp"
+        	android:background="@drawable/window_defect_group_bg" >
+	        <TableRow
+	            android:layout_marginTop="15dp"
+	            android:layout_marginLeft="20dp">
+	            <ImageView 
+	        	android:id="@+id/IVDT_B"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_B"
+                android:layout_width="120dp"
+                android:text="Broken"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	            <ImageView 
+	        	android:id="@+id/IVDT_G"
+	        	android:layout_marginLeft="10dp"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_G"
+                android:layout_width="120dp"
+                android:text="Gap"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	            <ImageView 
+	        	android:id="@+id/IVDT_P"
+	        	android:layout_marginLeft="10dp"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_P"
+                android:layout_width="120dp"
+                android:text="Miss-Parts"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	            <ImageView 
+	        	android:id="@+id/IVDT_S"
+	        	android:layout_marginLeft="10dp"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_S"
+                android:layout_width="120dp"
+                android:text="Scrath"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	        </TableRow>
+	        <TableRow
+	            android:layout_marginTop="15dp"
+	            android:layout_marginLeft="20dp">
+	            <ImageView 
+	        	android:id="@+id/IVDT_D"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_D"
+                android:layout_width="120dp"
+                android:text="Dent-Mark"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	            <ImageView 
+	        	android:id="@+id/IVDT_M"
+	        	android:layout_marginLeft="10dp"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_M"
+                android:layout_width="120dp"
+                android:text="Malfunct"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	            <ImageView 
+	        	android:id="@+id/IVDT_O"
+	        	android:layout_marginLeft="10dp"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_O"
+                android:layout_width="120dp"
+                android:text="Others"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	            <ImageView 
+	        	android:id="@+id/IVDT_A"
+	        	android:layout_marginLeft="10dp"
+	        	android:src="@drawable/empty"  
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"></ImageView>  
+        		<TextView
+	        	android:id="@+id/TVDT_A"
+                android:layout_width="120dp"
+                android:text="Sealant"
+                android:textColor="#000000"
+	        	android:layout_marginLeft="10dp"
+                android:textSize="21sp" />
+	        </TableRow>
+	    </TableLayout >
+	                    
+             
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_edit_bg" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativeLayout2" 
+            android:background="@drawable/p_001">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#00000000" >
+
+                <br.com.dina.ui.widget.UITableView
+                    android:id="@+id/tableView"
+                    style="@style/UITableView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </br.com.dina.ui.widget.UITableView>
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnRectify"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            android:layout_alignBaseline="@+id/btnSelectAll"
+            android:layout_alignBottom="@+id/btnSelectAll"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_but"
+            android:text="@string/btnRectify"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            android:layout_alignBaseline="@+id/btnRectify"
+            android:layout_alignBottom="@+id/btnRectify"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_but"
+            android:text="@string/btnDelete"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnEditPhoto"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/btnSelectAll"
+            android:layout_below="@+id/btnSelectAll"
+            android:background="@drawable/bg_but"
+             android:layout_marginTop="11dp"
+            android:text="@string/btnEditPhoto"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            android:layout_alignBaseline="@+id/btnEditPhoto"
+            android:layout_alignBottom="@+id/btnEditPhoto"
+            android:layout_alignLeft="@+id/btnDelete"
+            android:background="@drawable/bg_but"
+            android:text="@string/btnSave"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            android:layout_alignBaseline="@+id/btnSave"
+            android:layout_alignBottom="@+id/btnSave"
+            android:layout_alignLeft="@+id/btnRectify"
+            android:background="@drawable/bg_but"
+            android:text="@string/btnHelp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnSelectAll"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/btnDelete"
+            android:background="@drawable/bg_but"
+            android:text="@string/btnSelectAll"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
